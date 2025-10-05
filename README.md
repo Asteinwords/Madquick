@@ -51,16 +51,16 @@ We used **AES (Advanced Encryption Standard)** from `crypto-js` for:
 
 
 # 1. Clone Repo
-git clone https://github.com/yourusername/password-vault.git
-cd password-vault
+git clone https://github.com/Asteinwords/Madquick.git
+
 
 # 2. Install Dependencies
 npm install
 
 # 3. Setup Environment
-# Create a .env.local file in the root folder and add:
-# MONGO_URI=your-mongodb-connection-string
-# JWT_SECRET=your-secret-key
+ Create a .env.local file in the root folder and add:
+ MONGO_URI=your-mongodb-connection-string
+ JWT_SECRET=your-secret-key
 
 # 4. Run App
 npm run dev
