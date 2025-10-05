@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { VaultItem, encryptItem, deriveKey } from '@/lib/crypto';
 import { copyToClipboard } from '@/utils';
+import toast from 'react-hot-toast';
 
 const schema = z.object({
   title: z.string().min(1),

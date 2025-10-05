@@ -214,7 +214,7 @@ export default function PasswordGenerator({ onGenerate }: Props) {
           appearance: none;
           height: 18px;
           width: 18px;
-          border-radius: 50%;
+          border-radius: 25
           background: linear-gradient(to right, #6366f1, #8b5cf6);
           cursor: pointer;
           box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
@@ -223,7 +223,7 @@ export default function PasswordGenerator({ onGenerate }: Props) {
         .slider::-moz-range-thumb {
           height: 18px;
           width: 18px;
-          border-radius: 50%;
+          border-radius: 25%
           background: linear-gradient(to right, #6366f1, #8b5cf6);
           cursor: pointer;
           border: 2px solid white;

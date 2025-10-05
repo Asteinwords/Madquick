@@ -15,7 +15,13 @@ export default function Vault() {
   const [search, setSearch] = useState('');
   const [generatedPassword, setGeneratedPassword] = useState('');
   const [generatedCopied, setGeneratedCopied] = useState(false);
-  const [userPassword] = useState(localStorage.getItem('userPassword') || '');
+  const [userPassword, setUserPassword] = useState('');
+
+useEffect(() => {
+  const pw = localStorage.getItem('userPassword') || '';
+  setUserPassword(pw);
+}, []);
+
   const [editingId, setEditingId] = useState<string | null>(null);
   const [filterTags, setFilterTags] = useState<string[]>([]);
   const [filterFolder, setFilterFolder] = useState('');
